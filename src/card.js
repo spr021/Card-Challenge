@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
@@ -10,11 +10,12 @@ import Typography from '@material-ui/core/Typography'
 import { connect } from 'react-redux'
 import Fab from '@material-ui/core/Fab'
 import AddIcon from '@material-ui/icons/Add'
+import Theme from './config/theme'
 
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
-    backgroundColor: '#eee'
+    backgroundColor: 'blue'
   },
   media: {
     height: 140
@@ -23,19 +24,35 @@ const useStyles = makeStyles({
 
 function MediaCard (props) {
   const [cardView, setCardView] = useState({
-
+    code: 1,
+    title: 'Exercise',
+    description: 'Exercise on a regular basis.',
+    tag: 'sport'
   })
-
   function changCard () {
     const rand = Math.floor(Math.random() * 5)
     setCardView(props.cards.cards[rand])
   }
+  useEffect(() => {
+    if (cardView.code === 2) {
+      const audioUrl = cardView.sound
+      console.log('sound', audioUrl)
+      var music = new Audio(audioUrl)
+      music.play()
+    }
+
+    return () => {
+      if (cardView.code === 2) {
+        music.pause()
+      }
+    }
+  }, [cardView.code])
 
   const classes = useStyles()
 
   return (
     <div className='cards'>
-      <Card className={classes.card}>
+      <Card style={Theme[cardView.tag].style}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
