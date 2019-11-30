@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import Card from './card'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
@@ -7,19 +7,6 @@ import { connect } from 'react-redux'
 import { SaveRequest } from './action/action'
 
 function App (props) {
-  const [fields, setFields] = useState({
-    email: 'zahra',
-    password: ''
-  })
-
-  // console.log('fff', fields)
-
-  // const [errors, setErrors] = useState({
-  //   email: '',
-  //   password: ''
-  //   }) 
-  // const [click, setClick] = useState(false)
-
   useEffect(() => {
     axios.get('http://static.pushe.co/challenge/json')
       .then(function (response) {

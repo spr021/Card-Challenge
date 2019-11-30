@@ -1,18 +1,18 @@
 const Theme = {
   fun: {
     style: {
-      backgroundColor: 'red'
+      backgroundColor: '#EAC435'
     }
 
   },
   sport: {
     style: {
-      backgroundColor: 'blue'
+      backgroundColor: '#0ACFFF'
     }
   },
   art: {
     style: {
-      backgroundColor: 'yellow'
+      backgroundColor: '#EE6352'
     }
   }
 }
