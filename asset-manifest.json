@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/card-challeng/static/css/main.bdb363ef.chunk.css",
+    "main.js": "/card-challeng/static/js/main.8aa3a751.chunk.js",
+    "main.js.map": "/card-challeng/static/js/main.8aa3a751.chunk.js.map",
+    "runtime-main.js": "/card-challeng/static/js/runtime-main.12ed8f70.js",
+    "runtime-main.js.map": "/card-challeng/static/js/runtime-main.12ed8f70.js.map",
+    "static/js/2.e7ee0e87.chunk.js": "/card-challeng/static/js/2.e7ee0e87.chunk.js",
+    "static/js/2.e7ee0e87.chunk.js.map": "/card-challeng/static/js/2.e7ee0e87.chunk.js.map",
+    "index.html": "/card-challeng/index.html",
+    "precache-manifest.d5e71c1a9ba556beb08e8896a7bcb168.js": "/card-challeng/precache-manifest.d5e71c1a9ba556beb08e8896a7bcb168.js",
+    "service-worker.js": "/card-challeng/service-worker.js",
+    "static/css/main.bdb363ef.chunk.css.map": "/card-challeng/static/css/main.bdb363ef.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12ed8f70.js",
+    "static/js/2.e7ee0e87.chunk.js",
+    "static/css/main.bdb363ef.chunk.css",
+    "static/js/main.8aa3a751.chunk.js"
+  ]
+}
